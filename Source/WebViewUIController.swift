@@ -24,11 +24,9 @@
 //
 
 import WebKit
+import Kamagari
 
-class WebViewUIController: NSObject {
-}
-
-extension WebViewUIController: WKUIDelegate {
+class WebViewUIController: NSObject, WKUIDelegate {
     
     func webView(webView: WKWebView, createWebViewWithConfiguration configuration: WKWebViewConfiguration, forNavigationAction navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
         webView.loadRequest(navigationAction.request)
@@ -36,27 +34,38 @@ extension WebViewUIController: WKUIDelegate {
     }
     
     func webView(webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: () -> Void) {
-        UIAlertController.showAlert(message: message) { _ in completionHandler() }
+        AlertBuilder(message: message, preferredStyle: .Alert)
+            .addAction(title: NSLocalizedString("OK", comment: "")) { _ in completionHandler() }
+            .build()
+            .kam_show()
     }
     
     func webView(webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: (Bool) -> Void) {
-        UIAlertController(title: message, message: nil, preferredStyle: .Alert)
-            .addAction(title: String.localized(key: "Cancel"), style: .Cancel) { _ in completionHandler(false) }
-            .addAction(title: String.localized(key: "OK")) { _ in completionHandler(true) }
-            .show()
+        AlertBuilder(message: message, preferredStyle: .Alert)
+            .addAction(title: NSLocalizedString("Cancel", comment: ""), style: .Cancel) { _ in completionHandler(false) }
+            .addAction(title: NSLocalizedString("OK", comment: "")) { _ in completionHandler(true) }
+            .build()
+            .kam_show()
     }
     
     func webView(webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: (String!) -> Void) {
-        let avc = UIAlertController(title: prompt, message: nil, preferredStyle: .Alert)
-        avc.addTextFieldHandler() { textField in textField.text = defaultText }
-            .addAction(title: String.localized(key: "Cancel"), style: .Cancel) { _ in completionHandler("") }
-            .addAction(title: String.localized(key: "OK")) { _ in
-                var input = ""
-                if let textField = avc.textFields?.first as? UITextField {
-                    input = textField.text
-                }
-                completionHandler(input)
+        
+        // variable to keep a reference to UIAlertController
+        var avc: UIAlertController?
+        
+        var okHandler: () -> Void = { handler in
+            if let avc = avc, let textField = avc.textFields?.first as? UITextField {
+                completionHandler(textField.text)
+            } else {
+                completionHandler("")
             }
-            .show()
+        }
+        
+        avc = AlertBuilder(title: nil, message: prompt, preferredStyle: .Alert)
+            .addTextFieldHandler() { $0.text = defaultText }
+            .addAction(title: NSLocalizedString("Cancel", comment: ""), style: .Cancel) { _ in completionHandler("") }
+            .addAction(title: NSLocalizedString("OK", comment: "")) { _ in okHandler() }
+            .build()
+        avc?.kam_show()
     }
 }
