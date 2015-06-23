@@ -1,0 +1,10 @@
+PODS:
+  - Kamagari (0.8.0)
+
+DEPENDENCIES:
+  - Kamagari
+
+SPEC CHECKSUMS:
+  Kamagari: 2a2d6c83728e60437e7f76809df1b378ecb2c74b
+
+COCOAPODS: 0.37.1
