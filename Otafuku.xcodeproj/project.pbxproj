@@ -34,6 +34,8 @@
 		F71493691B350A43008A359E /* Otafuku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Otafuku.h; sourceTree = "<group>"; };
 		F714936D1B350A4D008A359E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F714936E1B350A4D008A359E /* OtafukuTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtafukuTests.swift; sourceTree = "<group>"; };
+		F71493761B350C04008A359E /* WebViewPropertyObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewPropertyObserver.swift; sourceTree = "<group>"; };
+		F71493771B350C04008A359E /* WebViewUIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewUIController.swift; sourceTree = "<group>"; };
 		F73BBCDD1B39009F00010E03 /* Kamagari.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kamagari.framework; path = Carthage/Build/iOS/Kamagari.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,8 @@
 			children = (
 				F71493681B350A43008A359E /* Info.plist */,
 				F71493691B350A43008A359E /* Otafuku.h */,
+				F71493761B350C04008A359E /* WebViewPropertyObserver.swift */,
+				F71493771B350C04008A359E /* WebViewUIController.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -211,6 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F71493781B350C04008A359E /* WebViewPropertyObserver.swift in Sources */,
+				F71493791B350C04008A359E /* WebViewUIController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
