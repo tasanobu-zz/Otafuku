@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KoW-Sx-lma">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,63 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jCw-N5-dWK">
+                                <rect key="frame" x="0.0" y="64" width="600" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="QCa-eC-Uxt"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jCw-N5-dWK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="Qhq-kE-oJa"/>
+                            <constraint firstItem="jCw-N5-dWK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="WRG-EX-yOo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jCw-N5-dWK" secondAttribute="trailing" constant="-16" id="aYq-pe-XpA"/>
+                        </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="iAe-z5-yGw"/>
+                        <barButtonItem enabled="NO" style="plain" systemItem="rewind" id="L1f-sp-Xo9">
+                            <connections>
+                                <action selector="didTouchBackItem" destination="vXZ-lx-hvc" id="arq-bN-lbm"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Lke-kh-Jtq"/>
+                        <barButtonItem enabled="NO" style="plain" systemItem="fastForward" id="5bv-tt-LQg">
+                            <connections>
+                                <action selector="didTouchForwardItem" destination="vXZ-lx-hvc" id="tlc-u1-xLH"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="6rg-81-pLV"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="2qM-58-Fik"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="backItem" destination="L1f-sp-Xo9" id="OBd-CI-uwv"/>
+                        <outlet property="forwardItem" destination="5bv-tt-LQg" id="QI5-gc-cAU"/>
+                        <outlet property="progressView" destination="jCw-N5-dWK" id="Vc8-Qi-Afk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="266" y="372"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xOL-DR-Acc">
+            <objects>
+                <navigationController id="KoW-Sx-lma" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zqO-lk-2TC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="BzF-9C-E9H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cYh-xl-Ww3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-585" y="372"/>
         </scene>
     </scenes>
 </document>
