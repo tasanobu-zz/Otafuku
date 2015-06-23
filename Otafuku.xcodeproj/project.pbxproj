@@ -10,11 +10,11 @@
 		F71493571B3509FD008A359E /* Otafuku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F714934B1B3509FD008A359E /* Otafuku.framework */; };
 		F714936A1B350A43008A359E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F71493681B350A43008A359E /* Info.plist */; };
 		F714936B1B350A43008A359E /* Otafuku.h in Headers */ = {isa = PBXBuildFile; fileRef = F71493691B350A43008A359E /* Otafuku.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F714936F1B350A4D008A359E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F714936D1B350A4D008A359E /* Info.plist */; };
 		F71493711B350B57008A359E /* OtafukuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F714936E1B350A4D008A359E /* OtafukuTests.swift */; };
 		F71493781B350C04008A359E /* WebViewPropertyObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71493761B350C04008A359E /* WebViewPropertyObserver.swift */; };
 		F71493791B350C04008A359E /* WebViewUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71493771B350C04008A359E /* WebViewUIController.swift */; };
 		F73BBCDE1B39009F00010E03 /* Kamagari.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73BBCDD1B39009F00010E03 /* Kamagari.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F73BBCF61B39469600010E03 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F714936D1B350A4D008A359E /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -196,7 +196,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F714936F1B350A4D008A359E /* Info.plist in Resources */,
 				F714936A1B350A43008A359E /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73BBCF61B39469600010E03 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
