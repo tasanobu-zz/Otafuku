@@ -26,21 +26,21 @@
 import WebKit
 import Kamagari
 
-class WebViewUIController: NSObject, WKUIDelegate {
+public class WebViewUIController: NSObject, WKUIDelegate {
     
-    func webView(webView: WKWebView, createWebViewWithConfiguration configuration: WKWebViewConfiguration, forNavigationAction navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+    public func webView(webView: WKWebView, createWebViewWithConfiguration configuration: WKWebViewConfiguration, forNavigationAction navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
         webView.loadRequest(navigationAction.request)
         return nil
     }
     
-    func webView(webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: () -> Void) {
+    public func webView(webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: () -> Void) {
         AlertBuilder(message: message, preferredStyle: .Alert)
             .addAction(title: NSLocalizedString("OK", comment: "")) { _ in completionHandler() }
             .build()
             .kam_show()
     }
     
-    func webView(webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: (Bool) -> Void) {
+    public func webView(webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: (Bool) -> Void) {
         AlertBuilder(message: message, preferredStyle: .Alert)
             .addAction(title: NSLocalizedString("Cancel", comment: ""), style: .Cancel) { _ in completionHandler(false) }
             .addAction(title: NSLocalizedString("OK", comment: "")) { _ in completionHandler(true) }
@@ -48,7 +48,7 @@ class WebViewUIController: NSObject, WKUIDelegate {
             .kam_show()
     }
     
-    func webView(webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: (String!) -> Void) {
+    public func webView(webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: (String!) -> Void) {
         
         // variable to keep a reference to UIAlertController
         var avc: UIAlertController?
