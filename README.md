@@ -12,7 +12,7 @@ Otafuku provides utility classes to use WKWebView.
 
 ## Features
 - ```WebViewUIController``` to handle WKUIDelegate methods by presenting an alert as usual browsers do.
-- ```WebViewPropertyObserver``` to notify WKWebView property value change via a registered closure and Swift enum. With this class, no KVO code is needed to WKWebView property value change.
+- ```WebViewPropertyObserver``` to notify WKWebView property value change via a registered closure and Swift enum. With this class, no KVO code is needed to know WKWebView property value change.
 
 ## Usage
 #### WebViewUIController
