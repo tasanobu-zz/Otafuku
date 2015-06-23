@@ -1,0 +1,3 @@
+[submodule "Carthage/Checkouts/Kamagari"]
+	path = Carthage/Checkouts/Kamagari
+	url = https://github.com/tasanobu/Kamagari.git
