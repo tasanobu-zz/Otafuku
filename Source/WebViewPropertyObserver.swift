@@ -28,7 +28,13 @@ import WebKit
 public class WebViewPropertyObserver: NSObject {
     public enum WebViewProperty {
         static let keys = ["title", "URL", "estimatedProgress", "canGoBack", "canGoForward", "hasOnlySecureContent", "loading"]
-        case Title(String?), URL(NSURL?), CanGoBack(Bool), CanGoForward(Bool), EstimatedProgress(Float), Loading(Bool), HasOnlySecureContent(Bool)
+        case Title(String?)
+        case URL(NSURL?)
+        case CanGoBack(Bool)
+        case CanGoForward(Bool)
+        case EstimatedProgress(Float)
+        case Loading(Bool)
+        case HasOnlySecureContent(Bool)
         
         init?(webView: WKWebView, key: String) {
             switch key {
