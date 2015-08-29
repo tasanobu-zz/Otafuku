@@ -7,286 +7,285 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		459867FA3083FAB79550EA5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D94522A342E2B220CB2E3F44 /* Foundation.framework */; };
-		4B2C1796236C179CB48C85AE /* Pods-Kamagari-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F13A393C9B8DDF5508172D /* Pods-Kamagari-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F36F0C4E8935B77120B9A90 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 579025C9C26AD3605C3AFCB5 /* Pods-dummy.m */; };
-		60CD69F3FBA5D15342C5AD74 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4523BAB470A783B329778F /* UIAlertControllerExtension.swift */; };
-		740B533ED72D248641492E2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D94522A342E2B220CB2E3F44 /* Foundation.framework */; };
-		9B5B502B7D7CACF4FA33AB3B /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A1038550B701980CF21B22 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3A0B538DA36D9BC645C12DA /* AlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96930820E19D6BC02E30722E /* AlertBuilder.swift */; };
-		E8E999FA4F2FF3847F745E0D /* Pods-Kamagari-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5511DA685D11670355286B /* Pods-Kamagari-dummy.m */; };
+		15EFCAB826CF7BD7836A221C7DEF6916 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21232B125FE63DC103A99A35072EF987 /* Foundation.framework */; };
+		299130BE892E185036E64CCD5CFE6674 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21232B125FE63DC103A99A35072EF987 /* Foundation.framework */; };
+		600E6564400C9B538A12438ABEC2D8A9 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBAB091FC9BE85CFFC2CAA3B2C329CAB /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60586C9E50CFF950738D30F979D9398C /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9DB5B5E61BBAEEF2EEF166882B5DCA /* Pods-dummy.m */; };
+		835153CB24087D82DF3269CF0CC85F84 /* Kamagari-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C906E13EC529E576D5657A5D8771193E /* Kamagari-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99FB347300C084633AB99A82C79EDB95 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093A45F556AE0C051119FD0C095C03BB /* UIAlertControllerExtension.swift */; };
+		BE4E2154813A4496B97DA0476E451E2C /* AlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B70AC5EF8A99D977CA269F23B4EF3 /* AlertBuilder.swift */; };
+		CF4CCDACD1954BDFD407C873B2EB5A16 /* Kamagari-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9889E9755EA5FD7311B101FE93C8D29B /* Kamagari-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		517A687161A01B48D424EC8A /* PBXContainerItemProxy */ = {
+		B941FBF03F29BCC1EC7D45A35C22AF4B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 99AA7B4C3426F0D38AC78BE0 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ED36AD5FA0299ABCE071DB95;
-			remoteInfo = "Pods-Kamagari";
+			remoteGlobalIDString = 8E39E44E53281EAD0FDDF9E3B1B8B231;
+			remoteInfo = Kamagari;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03166C433AD19CD1582F2404 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C2E60E54F0BAF9743A32FBD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EE3CD2104B9E9F4483DB847 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28F13A393C9B8DDF5508172D /* Pods-Kamagari-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kamagari-umbrella.h"; sourceTree = "<group>"; };
-		29B6DC39899C8ADBA9E92D6E /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		3402CCB5D7AE6E236D3D443D /* Pods-Kamagari.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Kamagari.modulemap"; sourceTree = "<group>"; };
-		36D95C60597B3C6A3F864E4B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		420FC06D96FCC1B49833740D /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		4BB809EF49129CBE2D995BC5 /* Pods-Kamagari-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kamagari-Private.xcconfig"; sourceTree = "<group>"; };
-		579025C9C26AD3605C3AFCB5 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		79DC340EEB0D5B30FC65846C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7D4523BAB470A783B329778F /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIAlertControllerExtension.swift; path = Source/UIAlertControllerExtension.swift; sourceTree = "<group>"; };
-		8173F6C520BD467A2DC207D3 /* Pods-Kamagari.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kamagari.xcconfig"; sourceTree = "<group>"; };
-		8830B8FBF19B0AE220AC5E71 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		89A2963E0C9FCBEA9E86B28E /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		94A1038550B701980CF21B22 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		96930820E19D6BC02E30722E /* AlertBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertBuilder.swift; path = Source/AlertBuilder.swift; sourceTree = "<group>"; };
-		CDC402996A945D838AABB0FA /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		CE2ED350C43854EFCF0F3A0D /* Kamagari.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kamagari.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE5511DA685D11670355286B /* Pods-Kamagari-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kamagari-dummy.m"; sourceTree = "<group>"; };
-		D94522A342E2B220CB2E3F44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DAB6984BC95E5AADCE71B2CC /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		E41A5D81ECBCD02140006822 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		F5A979431E5D25C39F8767FA /* Pods-Kamagari-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kamagari-prefix.pch"; sourceTree = "<group>"; };
+		093A45F556AE0C051119FD0C095C03BB /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIAlertControllerExtension.swift; path = Source/UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		1BA6C190CFC9C47C7835C1AD7B0F8286 /* Kamagari-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kamagari-prefix.pch"; sourceTree = "<group>"; };
+		21232B125FE63DC103A99A35072EF987 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		557E3C54F791A27B258F7E87F5A91FB0 /* Kamagari.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kamagari.modulemap; sourceTree = "<group>"; };
+		5E9DB5B5E61BBAEEF2EEF166882B5DCA /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		7F154C8D3D091AA31074B9036919C47A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		983B70AC5EF8A99D977CA269F23B4EF3 /* AlertBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertBuilder.swift; path = Source/AlertBuilder.swift; sourceTree = "<group>"; };
+		9889E9755EA5FD7311B101FE93C8D29B /* Kamagari-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kamagari-dummy.m"; sourceTree = "<group>"; };
+		A1A83E3C7AE12AD40A4307D4835F96E7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		ABFCA65A70FE1380B0E3BEF1B4E099AF /* Kamagari.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kamagari.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C15AAA2415C77327C600EEA20C15C806 /* Kamagari-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Kamagari-Private.xcconfig"; sourceTree = "<group>"; };
+		C906E13EC529E576D5657A5D8771193E /* Kamagari-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kamagari-umbrella.h"; sourceTree = "<group>"; };
+		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E53F5F966D772E32F3AC675B9677C4EA /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED64616C76BDDC9DBA5031B494BDD14B /* Kamagari.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kamagari.xcconfig; sourceTree = "<group>"; };
+		FBAB091FC9BE85CFFC2CAA3B2C329CAB /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		FF083C0D440BA6A76C2245E7332E908B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8972D7AD3595470BF1BE838B /* Frameworks */ = {
+		1DBA1B767C6027E3E22BAF91F234DC4D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				740B533ED72D248641492E2F /* Foundation.framework in Frameworks */,
+				15EFCAB826CF7BD7836A221C7DEF6916 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		90D2BF60248C2935AD773055 /* Frameworks */ = {
+		7A82A2BCAEA60E7839766C9230F27591 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				459867FA3083FAB79550EA5A /* Foundation.framework in Frameworks */,
+				299130BE892E185036E64CCD5CFE6674 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		473E708805BCACB2B1EC736C = {
+		28757D9907C98F0F5B66BC8F22A48A10 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DAB6984BC95E5AADCE71B2CC /* Podfile */,
-				FC9B70FB143DFB51B1AF53C5 /* Frameworks */,
-				F634A8693671299C4C69AC16 /* Pods */,
-				BEAAB85EED67CF1122DCE814 /* Products */,
-				D8D4FEC1E1ADAB1980FA096C /* Targets Support Files */,
+				6D3C561853782234CE7DD1B3CCC6AABB /* Kamagari */,
 			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		5498B33495ED7E65B38EBF19 /* Pods */ = {
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				03166C433AD19CD1582F2404 /* Info.plist */,
-				89A2963E0C9FCBEA9E86B28E /* Pods.modulemap */,
-				79DC340EEB0D5B30FC65846C /* Pods-acknowledgements.markdown */,
-				CDC402996A945D838AABB0FA /* Pods-acknowledgements.plist */,
-				579025C9C26AD3605C3AFCB5 /* Pods-dummy.m */,
-				420FC06D96FCC1B49833740D /* Pods-environment.h */,
-				29B6DC39899C8ADBA9E92D6E /* Pods-frameworks.sh */,
-				8830B8FBF19B0AE220AC5E71 /* Pods-resources.sh */,
-				94A1038550B701980CF21B22 /* Pods-umbrella.h */,
-				E41A5D81ECBCD02140006822 /* Pods.debug.xcconfig */,
-				36D95C60597B3C6A3F864E4B /* Pods.release.xcconfig */,
+				21232B125FE63DC103A99A35072EF987 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6D3C561853782234CE7DD1B3CCC6AABB /* Kamagari */ = {
+			isa = PBXGroup;
+			children = (
+				983B70AC5EF8A99D977CA269F23B4EF3 /* AlertBuilder.swift */,
+				093A45F556AE0C051119FD0C095C03BB /* UIAlertControllerExtension.swift */,
+				ED97705D8D66EF1842A7FE6341BC1AAA /* Support Files */,
+			);
+			path = Kamagari;
+			sourceTree = "<group>";
+		};
+		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */,
+				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
+				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
+				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
+				5E9DB5B5E61BBAEEF2EEF166882B5DCA /* Pods-dummy.m */,
+				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
+				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
+				FBAB091FC9BE85CFFC2CAA3B2C329CAB /* Pods-umbrella.h */,
+				7F154C8D3D091AA31074B9036919C47A /* Pods.debug.xcconfig */,
+				A1A83E3C7AE12AD40A4307D4835F96E7 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		9D926AD7905261EADFDC38E4 /* Kamagari */ = {
+		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				96930820E19D6BC02E30722E /* AlertBuilder.swift */,
-				7D4523BAB470A783B329778F /* UIAlertControllerExtension.swift */,
-				C214956C9EA88C7B4AF2D65E /* Support Files */,
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				28757D9907C98F0F5B66BC8F22A48A10 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
 			);
-			path = Kamagari;
 			sourceTree = "<group>";
 		};
-		BEAAB85EED67CF1122DCE814 /* Products */ = {
+		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE2ED350C43854EFCF0F3A0D /* Kamagari.framework */,
-				0C2E60E54F0BAF9743A32FBD /* Pods.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C214956C9EA88C7B4AF2D65E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1EE3CD2104B9E9F4483DB847 /* Info.plist */,
-				3402CCB5D7AE6E236D3D443D /* Pods-Kamagari.modulemap */,
-				8173F6C520BD467A2DC207D3 /* Pods-Kamagari.xcconfig */,
-				4BB809EF49129CBE2D995BC5 /* Pods-Kamagari-Private.xcconfig */,
-				CE5511DA685D11670355286B /* Pods-Kamagari-dummy.m */,
-				F5A979431E5D25C39F8767FA /* Pods-Kamagari-prefix.pch */,
-				28F13A393C9B8DDF5508172D /* Pods-Kamagari-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Kamagari";
-			sourceTree = "<group>";
-		};
-		D8D4FEC1E1ADAB1980FA096C /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5498B33495ED7E65B38EBF19 /* Pods */,
+				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		EBB418D3E19ABFD140085EAF /* iOS */ = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D94522A342E2B220CB2E3F44 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		F634A8693671299C4C69AC16 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9D926AD7905261EADFDC38E4 /* Kamagari */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FC9B70FB143DFB51B1AF53C5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EBB418D3E19ABFD140085EAF /* iOS */,
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABFCA65A70FE1380B0E3BEF1B4E099AF /* Kamagari.framework */,
+				E53F5F966D772E32F3AC675B9677C4EA /* Pods.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED97705D8D66EF1842A7FE6341BC1AAA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF083C0D440BA6A76C2245E7332E908B /* Info.plist */,
+				557E3C54F791A27B258F7E87F5A91FB0 /* Kamagari.modulemap */,
+				ED64616C76BDDC9DBA5031B494BDD14B /* Kamagari.xcconfig */,
+				C15AAA2415C77327C600EEA20C15C806 /* Kamagari-Private.xcconfig */,
+				9889E9755EA5FD7311B101FE93C8D29B /* Kamagari-dummy.m */,
+				1BA6C190CFC9C47C7835C1AD7B0F8286 /* Kamagari-prefix.pch */,
+				C906E13EC529E576D5657A5D8771193E /* Kamagari-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Kamagari";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1CE95C4B4C02B8789AA2EBFF /* Headers */ = {
+		4259B16693775AE89F685267B8EBAC3D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B2C1796236C179CB48C85AE /* Pods-Kamagari-umbrella.h in Headers */,
+				835153CB24087D82DF3269CF0CC85F84 /* Kamagari-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44C331CE7F721BA035725E0E /* Headers */ = {
+		D03F3EA1B047A8EA9067081D8846A427 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B5B502B7D7CACF4FA33AB3B /* Pods-umbrella.h in Headers */,
+				600E6564400C9B538A12438ABEC2D8A9 /* Pods-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		39AD8EA489928D18390446E2 /* Pods */ = {
+		8E39E44E53281EAD0FDDF9E3B1B8B231 /* Kamagari */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5044674959C823E842CFBCA /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = E6F75DD44CAF9E158498E63EC07A896D /* Build configuration list for PBXNativeTarget "Kamagari" */;
 			buildPhases = (
-				4184FA85A2028C9FBB834141 /* Sources */,
-				90D2BF60248C2935AD773055 /* Frameworks */,
-				44C331CE7F721BA035725E0E /* Headers */,
+				B3A7322082FF24A2A5BD506AD586ACD9 /* Sources */,
+				7A82A2BCAEA60E7839766C9230F27591 /* Frameworks */,
+				4259B16693775AE89F685267B8EBAC3D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				83829C8640966C56F954172C /* PBXTargetDependency */,
+			);
+			name = Kamagari;
+			productName = Kamagari;
+			productReference = ABFCA65A70FE1380B0E3BEF1B4E099AF /* Kamagari.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9F092CEDEBEDE32BF4E100A15EB4A03 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE3F93D60935694E006C616D96E56E3B /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				9DD61E1B25316515CFAFD9D1ADFBD25C /* Sources */,
+				1DBA1B767C6027E3E22BAF91F234DC4D /* Frameworks */,
+				D03F3EA1B047A8EA9067081D8846A427 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC140046AC8EA5C83B51F6B46E339ED7 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = 0C2E60E54F0BAF9743A32FBD /* Pods.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		ED36AD5FA0299ABCE071DB95 /* Pods-Kamagari */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 495A8E36C22B86303F914760 /* Build configuration list for PBXNativeTarget "Pods-Kamagari" */;
-			buildPhases = (
-				6F8C8FDBDF3E1AA0E090829B /* Sources */,
-				8972D7AD3595470BF1BE838B /* Frameworks */,
-				1CE95C4B4C02B8789AA2EBFF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Kamagari";
-			productName = "Pods-Kamagari";
-			productReference = CE2ED350C43854EFCF0F3A0D /* Kamagari.framework */;
+			productReference = E53F5F966D772E32F3AC675B9677C4EA /* Pods.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		99AA7B4C3426F0D38AC78BE0 /* Project object */ = {
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 			};
-			buildConfigurationList = 80EB86D4B0016FB872F17316 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 473E708805BCACB2B1EC736C;
-			productRefGroup = BEAAB85EED67CF1122DCE814 /* Products */;
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				39AD8EA489928D18390446E2 /* Pods */,
-				ED36AD5FA0299ABCE071DB95 /* Pods-Kamagari */,
+				8E39E44E53281EAD0FDDF9E3B1B8B231 /* Kamagari */,
+				E9F092CEDEBEDE32BF4E100A15EB4A03 /* Pods */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4184FA85A2028C9FBB834141 /* Sources */ = {
+		9DD61E1B25316515CFAFD9D1ADFBD25C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F36F0C4E8935B77120B9A90 /* Pods-dummy.m in Sources */,
+				60586C9E50CFF950738D30F979D9398C /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F8C8FDBDF3E1AA0E090829B /* Sources */ = {
+		B3A7322082FF24A2A5BD506AD586ACD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3A0B538DA36D9BC645C12DA /* AlertBuilder.swift in Sources */,
-				E8E999FA4F2FF3847F745E0D /* Pods-Kamagari-dummy.m in Sources */,
-				60CD69F3FBA5D15342C5AD74 /* UIAlertControllerExtension.swift in Sources */,
+				BE4E2154813A4496B97DA0476E451E2C /* AlertBuilder.swift in Sources */,
+				CF4CCDACD1954BDFD407C873B2EB5A16 /* Kamagari-dummy.m in Sources */,
+				99FB347300C084633AB99A82C79EDB95 /* UIAlertControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		83829C8640966C56F954172C /* PBXTargetDependency */ = {
+		EC140046AC8EA5C83B51F6B46E339ED7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Kamagari";
-			target = ED36AD5FA0299ABCE071DB95 /* Pods-Kamagari */;
-			targetProxy = 517A687161A01B48D424EC8A /* PBXContainerItemProxy */;
+			name = Kamagari;
+			target = 8E39E44E53281EAD0FDDF9E3B1B8B231 /* Kamagari */;
+			targetProxy = B941FBF03F29BCC1EC7D45A35C22AF4B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		16D5F4516AD80AEF5DBA28DD /* Release */ = {
+		325486E7F294BABD9EB66EA8625D1715 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BB809EF49129CBE2D995BC5 /* Pods-Kamagari-Private.xcconfig */;
+			baseConfigurationReference = A1A83E3C7AE12AD40A4307D4835F96E7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -295,14 +294,16 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Kamagari/Pods-Kamagari-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Kamagari/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Kamagari/Pods-Kamagari.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Kamagari;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,43 +312,9 @@
 			};
 			name = Release;
 		};
-		62ED1AB3AFA166AD9B929E6A /* Release */ = {
+		50E6EC2BB5B179A7D72B2EAF1E46513C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		66F8420AAE3A7BB6AB392F92 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BB809EF49129CBE2D995BC5 /* Pods-Kamagari-Private.xcconfig */;
+			baseConfigurationReference = 7F154C8D3D091AA31074B9036919C47A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -356,14 +323,16 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Kamagari/Pods-Kamagari-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Kamagari/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Kamagari/Pods-Kamagari.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Kamagari;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -373,7 +342,7 @@
 			};
 			name = Debug;
 		};
-		7CDBF57093D346F18FA15B7A /* Debug */ = {
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -412,27 +381,52 @@
 			};
 			name = Debug;
 		};
-		8E72D1FF3A7E3D60A02F078B /* Debug */ = {
+		A7EAD5AB630D8BC42B7B978AEBA7253E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E41A5D81ECBCD02140006822 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = C15AAA2415C77327C600EEA20C15C806 /* Kamagari-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0.9.0;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 0.9.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Kamagari/Kamagari-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kamagari/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Kamagari/Kamagari.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Kamagari;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B3C357E84AE869EA89561906ADF1FEA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C15AAA2415C77327C600EEA20C15C806 /* Kamagari-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.9.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.9.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Kamagari/Kamagari-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kamagari/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kamagari/Kamagari.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
+				PRODUCT_NAME = Kamagari;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -442,66 +436,71 @@
 			};
 			name = Debug;
 		};
-		F27F3935AF81E8717208B5DE /* Release */ = {
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36D95C60597B3C6A3F864E4B /* Pods.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		495A8E36C22B86303F914760 /* Build configuration list for PBXNativeTarget "Pods-Kamagari" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				66F8420AAE3A7BB6AB392F92 /* Debug */,
-				16D5F4516AD80AEF5DBA28DD /* Release */,
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		80EB86D4B0016FB872F17316 /* Build configuration list for PBXProject "Pods" */ = {
+		CE3F93D60935694E006C616D96E56E3B /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7CDBF57093D346F18FA15B7A /* Debug */,
-				62ED1AB3AFA166AD9B929E6A /* Release */,
+				50E6EC2BB5B179A7D72B2EAF1E46513C /* Debug */,
+				325486E7F294BABD9EB66EA8625D1715 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5044674959C823E842CFBCA /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		E6F75DD44CAF9E158498E63EC07A896D /* Build configuration list for PBXNativeTarget "Kamagari" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8E72D1FF3A7E3D60A02F078B /* Debug */,
-				F27F3935AF81E8717208B5DE /* Release */,
+				B3C357E84AE869EA89561906ADF1FEA1 /* Debug */,
+				A7EAD5AB630D8BC42B7B978AEBA7253E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 99AA7B4C3426F0D38AC78BE0 /* Project object */;
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }

@@ -1,3 +1,13 @@
+Kamagari
+===
+[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
+)](https://developer.apple.com/swift)
+[![CocoaPods](https://img.shields.io/cocoapods/v/Kamagari.svg)]()
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
+)](http://mit-license.org)
+[![Issues](https://img.shields.io/github/issues/tasanobu/Kamagari.svg?style=flat
+)](https://github.com/tasanobu/Kamagari/issues?state=open)
+
 Simple UIAlertController builder class in Swift.
 
 ## Features
@@ -16,11 +26,25 @@ AlertBuilder(title: "Question", message: "Are you sure where Kamagari is?", pref
     .kam_show(animated: true)
 
 // ActionSheet Sample
-AlertBuilder(title: "Question", message: "Are you sure where Kamagari is?", preferredStyle: .ActionSheet)
-    .addAction(title: "NO", style: .Cancel) { _ in }
-    .addAction(title: "YES", style: .Default) { _ in }
-    .build()
-    .kam_show(animated: true)
+if UIDevice.currentDevice().userInterfaceIdiom != .Pad {
+    // Sample to show on iPad
+    AlertBuilder(title: "Question", message: "Are you sure where Kamagari is?", preferredStyle: .ActionSheet)
+        .addAction(title: "NO", style: .Cancel) { _ in }
+        .addAction(title: "YES", style: .Default) { _ in }
+        .build()
+        .kam_show(animated: true)
+} else {
+    /*
+      Sample to show on iPad
+      With setPopoverPresentationProperties(), specify the properties of UIPopoverPresentationController.
+    */
+    AlertBuilder(title: "Question", message: "Are you sure where Kamagari is?", preferredStyle: .ActionSheet)
+        .addAction(title: "YES", style: .Default) { _ in }
+        .addAction(title: "Not Sure", style: .Default) { _ in }
+        .setPopoverPresentationProperties(sourceView: view, sourceRect: CGRectMake(0, 0, 100, 100), barButtonItem: nil, permittedArrowDirections: .Any)
+        .build()
+        .kam_show(animated: true)
+}
 ```
 
 <table>
@@ -30,7 +54,7 @@ AlertBuilder(title: "Question", message: "Are you sure where Kamagari is?", pref
 
 ## Requirements
 - iOS 8.0+
-- Xcode 6.3
+- Xcode 7.0
 
 ## Installation
 - Install with CocoaPods
@@ -39,6 +63,9 @@ pod 'Kamagari'
 ```
 - Copyin all the files into your project
 - Use git submodule
+
+## Release Notes
+See <a href="https://github.com/tasanobu/Kamagari/blob/master/CHANGES.md">CHANGES.md</a>
 
 ## License
 Kamagari is released under the MIT license. See LICENSE for details.

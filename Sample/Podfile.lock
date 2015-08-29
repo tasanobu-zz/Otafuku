@@ -1,10 +1,20 @@
 PODS:
-  - Kamagari (0.8.0)
+  - Kamagari (0.9.0)
 
 DEPENDENCIES:
-  - Kamagari
+  - Kamagari (from `https://github.com/tasanobu/Kamagari`, branch `swift2.0`)
+
+EXTERNAL SOURCES:
+  Kamagari:
+    :branch: swift2.0
+    :git: https://github.com/tasanobu/Kamagari
+
+CHECKOUT OPTIONS:
+  Kamagari:
+    :commit: 9af88d58e0498209fc4d65e8c7298d040acc7c06
+    :git: https://github.com/tasanobu/Kamagari
 
 SPEC CHECKSUMS:
-  Kamagari: 2a2d6c83728e60437e7f76809df1b378ecb2c74b
+  Kamagari: e4dc6c28387e7cf1da9835870fe36aa9e97fc2f9
 
-COCOAPODS: 0.37.1
+COCOAPODS: 0.38.2
