@@ -95,11 +95,10 @@ public class WebViewPropertyObserver: NSObject {
         }
     }
     
-    override public func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
-        if let wv = object as? WKWebView {
-            if let property = WebViewProperty(webView: wv, key: keyPath) {
-                handler(property)
-            }
+    override public func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+        guard let keyPath = keyPath, let wv = object as? WKWebView, let property = WebViewProperty(webView: wv, key: keyPath) else {
+            return
         }
+        handler(property)
     }
 }

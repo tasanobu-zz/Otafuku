@@ -48,13 +48,13 @@ public class WebViewUIController: NSObject, WKUIDelegate {
             .kam_show()
     }
     
-    public func webView(webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: (String!) -> Void) {
+    public func webView(webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: (String?) -> Void) {
         
         // variable to keep a reference to UIAlertController
         var avc: UIAlertController?
         
-        var okHandler: () -> Void = { handler in
-            if let avc = avc, let textField = avc.textFields?.first as? UITextField {
+        let okHandler: () -> Void = { handler in
+            if let avc = avc, let textField = avc.textFields?.first {
                 completionHandler(textField.text)
             } else {
                 completionHandler("")
