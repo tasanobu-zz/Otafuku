@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         webView = WKWebView(frame: view.frame)
-        webView.autoresizingMask = .FlexibleWidth | .FlexibleHeight
+        webView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
         webView.allowsBackForwardNavigationGestures = true
         webView.UIDelegate = uiDelegate
         view.addSubview(webView)
