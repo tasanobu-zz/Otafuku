@@ -1,5 +1,5 @@
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'Kamagari', :git => 'https://github.com/tasanobu/Kamagari', :branch => 'swift2.0'
+pod 'Kamagari', '~>1.0.0'
 
