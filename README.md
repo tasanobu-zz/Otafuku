@@ -75,7 +75,7 @@ class ViewController: UIViewController {
 
 ## Requirements
 - iOS 8.0+
-- Xcode 6.3
+- Xcode 7.0
 
 ## Installation
 - Install with CocoaPods
