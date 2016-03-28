@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Otafuku'
-  s.version = '1.0.0'
+  s.version = '1.0.1'
   s.license = 'MIT'
   s.summary = 'Otafuku provides utility classes to use WKWebView'
   s.homepage = 'https://github.com/tasanobu/Otafuku'
@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/tasanobu/Otafuku.git', :tag => s.version }
   s.ios.deployment_target = '8.0'
   s.source_files = 'Source/*.swift'
-  s.dependency 'Kamagari', '~> 1.0.0'
+  s.dependency 'Kamagari', '~> 1.0.1'
   s.requires_arc = true
 end
