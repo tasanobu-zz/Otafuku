@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Otafuku'
-  s.version = '1.0.1'
+  s.version = '1.1.0'
   s.license = 'MIT'
   s.summary = 'Otafuku provides utility classes to use WKWebView'
   s.homepage = 'https://github.com/tasanobu/Otafuku'
