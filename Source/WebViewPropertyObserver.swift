@@ -28,39 +28,39 @@ import WebKit
 public class WebViewPropertyObserver: NSObject {
     public enum WebViewProperty {
         static let keys = ["title", "URL", "estimatedProgress", "canGoBack", "canGoForward", "hasOnlySecureContent", "loading"]
-        case Title(String?)
-        case URL(NSURL?)
-        case CanGoBack(Bool)
-        case CanGoForward(Bool)
-        case EstimatedProgress(Float)
-        case Loading(Bool)
-        case HasOnlySecureContent(Bool)
+        case title(String?)
+        case url(Foundation.URL?)
+        case canGoBack(Bool)
+        case canGoForward(Bool)
+        case estimatedProgress(Float)
+        case loading(Bool)
+        case hasOnlySecureContent(Bool)
         
         init?(webView: WKWebView, key: String) {
             switch key {
             case "title":
-                self = .Title(webView.title)
+                self = .title(webView.title)
                 
             case "URL":
-                self = .URL(webView.URL)
+                self = .url(webView.url)
                 
             case "estimatedProgress":
                 var progress = Float(webView.estimatedProgress)
                 progress = max(0.0, progress)
                 progress = min(1.0, progress)
-                self = .EstimatedProgress(progress)
+                self = .estimatedProgress(progress)
                 
             case "canGoBack":
-                self = .CanGoBack(webView.canGoBack)
+                self = .canGoBack(webView.canGoBack)
                 
             case "canGoForward":
-                self = .CanGoForward(webView.canGoForward)
+                self = .canGoForward(webView.canGoForward)
                 
             case "hasOnlySecureContent":
-                self = .HasOnlySecureContent(webView.hasOnlySecureContent)
+                self = .hasOnlySecureContent(webView.hasOnlySecureContent)
                 
             case "loading":
-                self = .Loading(webView.loading)
+                self = .loading(webView.isLoading)
                 
             default:
                 return nil
@@ -72,7 +72,7 @@ public class WebViewPropertyObserver: NSObject {
     private let handler: WebViewPropertyChangeHandler
     public typealias WebViewPropertyChangeHandler = (WebViewProperty) -> ()
     
-    public init(webView: WKWebView, handler: WebViewPropertyChangeHandler) {
+    public init(webView: WKWebView, handler: @escaping WebViewPropertyChangeHandler) {
         self.webView = webView
         self.handler = handler
         super.init()
@@ -85,7 +85,7 @@ public class WebViewPropertyObserver: NSObject {
     
     private func startObservingProperties() {
         for key in WebViewProperty.keys {
-            webView?.addObserver(self, forKeyPath: key, options: NSKeyValueObservingOptions.New, context: nil)
+            webView?.addObserver(self, forKeyPath: key, options: NSKeyValueObservingOptions.new, context: nil)
         }
     }
     
@@ -95,7 +95,7 @@ public class WebViewPropertyObserver: NSObject {
         }
     }
     
-    override public func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+    override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         guard let keyPath = keyPath, let wv = object as? WKWebView, let property = WebViewProperty(webView: wv, key: keyPath) else {
             return
         }
