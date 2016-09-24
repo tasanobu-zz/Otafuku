@@ -72,7 +72,7 @@ public class WebViewPropertyObserver: NSObject {
     private let handler: WebViewPropertyChangeHandler
     public typealias WebViewPropertyChangeHandler = (WebViewProperty) -> ()
     
-    public init(webView: WKWebView, handler: WebViewPropertyChangeHandler) {
+    public init(webView: WKWebView, handler: @escaping WebViewPropertyChangeHandler) {
         self.webView = webView
         self.handler = handler
         super.init()
@@ -95,7 +95,7 @@ public class WebViewPropertyObserver: NSObject {
         }
     }
     
-    override public func observeValue(forKeyPath keyPath: String?, of object: AnyObject?, change: [NSKeyValueChangeKey : AnyObject]?, context: UnsafeMutablePointer<Void>?) {
+    override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         guard let keyPath = keyPath, let wv = object as? WKWebView, let property = WebViewProperty(webView: wv, key: keyPath) else {
             return
         }
