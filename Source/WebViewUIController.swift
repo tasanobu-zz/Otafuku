@@ -53,7 +53,7 @@ public class WebViewUIController: NSObject, WKUIDelegate {
         // variable to keep a reference to UIAlertController
         var avc: UIAlertController?
         
-        let okHandler: () -> Void = { handler in
+        let okHandler: () -> Void = { 
             if let avc = avc, let textField = avc.textFields?.first {
                 completionHandler(textField.text)
             } else {
@@ -62,7 +62,7 @@ public class WebViewUIController: NSObject, WKUIDelegate {
         }
         
         avc = AlertBuilder(title: nil, message: prompt, preferredStyle: .alert)
-            .addTextFieldHandler() { $0.text = defaultText }
+            .addTextFieldHandler() { $0?.text = defaultText }
             .addAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel) { _ in completionHandler("") }
             .addAction(title: NSLocalizedString("OK", comment: "")) { _ in okHandler() }
             .build()
